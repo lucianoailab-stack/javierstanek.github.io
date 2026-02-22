@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Javier Stanek | Técnico Electromecánico en General Pico</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Técnico Electromecánico en General Pico. Instalaciones eléctricas domiciliarias e industriales, refrigeración y climatización, automatización y electromontaje, cámaras de seguridad. Presupuestos sin cargo." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://TU-DOMINIO.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Javier Stanek | Técnico Electromecánico" />
+  <meta property="og:description" content="Soluciones eléctricas, refrigeración y automatización en General Pico. Presupuestos sin cargo." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:url" content="https://TU-DOMINIO.com/" />
+  <!-- Si tenés un logo/imagen, subilo y pegá la URL -->
+  <meta property="og:image" content="https://TU-DOMINIO.com/og-image.jpg" />
+
+  <!-- Schema.org LocalBusiness (Google) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Javier Stanek - Técnico Electromecánico",
+    "image": "https://TU-DOMINIO.com/og-image.jpg",
+    "telephone": "+54 9 2302 606482",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "General Pico",
+      "addressRegion": "La Pampa",
+      "addressCountry": "AR"
+    },
+    "areaServed": "General Pico, La Pampa",
+    "priceRange": "$$",
+    "url": "https://TU-DOMINIO.com/"
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg: #0D1B2A;        /* navy */
+      --bg2:#0A1420;
+      --card:#111E2D;
+      --text:#F3F6FB;
+      --muted:#B9C2D0;
+      --gold:#D7B56D;      /* dorado suave */
+      --gold2:#CFA857;
+      --stroke: rgba(215,181,109,.25);
+      --shadow: 0 14px 45px rgba(0,0,0,.35);
+      --radius: 18px;
+      --radius2: 22px;
+      --max: 1080px;
+      --mono: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+    }
+
+    *{ box-sizing: border-box; }
+    html, body{ height:100%; }
+    body{
+      margin:0;
+      font-family: var(--mono);
+      color: var(--text);
+      background:
+        radial-gradient(1200px 600px at 20% 0%, rgba(215,181,109,.10), transparent 55%),
+        radial-gradient(1000px 600px at 85% 10%, rgba(140,190,255,.10), transparent 55%),
+        linear-gradient(180deg, var(--bg), var(--bg2));
+    }
+
+    a{ color:inherit; text-decoration:none; }
+    .wrap{ max-width: var(--max); margin:0 auto; padding: 24px; }
+
+    /* Top bar */
+    .topbar{
+      position: sticky;
+      top:0;
+      z-index: 50;
+      backdrop-filter: blur(10px);
+      background: linear-gradient(180deg, rgba(13,27,42,.85), rgba(13,27,42,.55));
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .topbar .wrap{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 14px;
+      padding: 14px 24px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap: 12px;
+      min-width: 240px;
+    }
+    .logo{
+      width: 40px; height: 40px;
+      border-radius: 12px;
+      background:
+        radial-gradient(18px 18px at 35% 35%, rgba(215,181,109,.7), transparent 60%),
+        linear-gradient(135deg, rgba(215,181,109,.18), rgba(255,255,255,.06));
+      border: 1px solid var(--stroke);
+      box-shadow: 0 10px 25px rgba(0,0,0,.25);
+      display:grid;
+      place-items:center;
+      font-weight: 700;
+      letter-spacing: .5px;
+      color: var(--gold);
+    }
+    .brand .name{
+      line-height: 1.05;
+    }
+    .brand .name strong{
+      display:block;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+    .brand .name span{
+      display:block;
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 3px;
+    }
+    nav{
+      display:flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+    nav a{
+      font-size: 13px;
+      color: var(--muted);
+      padding: 8px 10px;
+      border-radius: 12px;
+      border: 1px solid transparent;
+    }
+    nav a:hover{
+      color: var(--text);
+      border-color: rgba(255,255,255,.08);
+      background: rgba(255,255,255,.04);
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding: 12px 16px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      font-weight: 600;
+      box-shadow: 0 10px 25px rgba(0,0,0,.18);
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+      cursor:pointer;
+      white-space: nowrap;
+    }
+    .btn:hover{ transform: translateY(-1px); background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.16); }
+    .btn.gold{
+      border-color: rgba(215,181,109,.45);
+      background: linear-gradient(135deg, rgba(215,181,109,.25), rgba(255,255,255,.04));
+    }
+    .btn.gold:hover{ border-color: rgba(215,181,109,.75); }
+
+    /* Hero */
+    .hero{
+      padding: 34px 0 10px;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.35fr .65fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: var(--radius2);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+    .card::before{
+      content:"";
+      position:absolute; inset:-2px;
+      background: radial-gradient(700px 300px at 20% 0%, rgba(215,181,109,.14), transparent 60%),
+                  radial-gradient(600px 260px at 80% 20%, rgba(120,180,255,.12), transparent 60%);
+      pointer-events:none;
+    }
+    .card > .inner{ position:relative; padding: 28px; }
+
+    .headline{
+      margin:0;
+      font-size: clamp(26px, 3.1vw, 40px);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+    .sub{
+      margin:10px 0 0;
+      color: var(--muted);
+      font-size: 16px;
+      line-height: 1.6;
+      max-width: 58ch;
+    }
+    .line{
+      height:1px;
+      background: linear-gradient(90deg, transparent, rgba(215,181,109,.65), transparent);
+      margin: 18px 0;
+    }
+    .cta-row{
+      display:flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items:center;
+      margin-top: 16px;
+    }
+
+    .info{
+      display:grid;
+      gap: 12px;
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.10);
+    }
+    .icon{
+      width: 26px; height: 26px;
+      border-radius: 10px;
+      border: 1px solid rgba(215,181,109,.35);
+      background: rgba(215,181,109,.10);
+      color: var(--gold);
+      display:grid;
+      place-items:center;
+      flex: 0 0 auto;
+      font-weight: 700;
+    }
+    .big-phone{
+      font-size: clamp(22px, 2.2vw, 30px);
+      letter-spacing: 1px;
+      color: var(--text);
+      font-weight: 800;
+    }
+
+    /* Side card */
+    .side{
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 14px;
+    }
+    .badge{
+      border: 1px solid rgba(215,181,109,.35);
+      background: rgba(215,181,109,.10);
+      color: var(--gold);
+      padding: 10px 12px;
+      border-radius: 14px;
+      font-weight: 650;
+      font-size: 13px;
+      display:inline-flex;
+      gap: 10px;
+      align-items:center;
+      width: fit-content;
+    }
+    .mini{
+      margin:0;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 14px;
+    }
+    .mini strong{ color: var(--text); }
+
+    /* Sections */
+    section{ padding: 20px 0; }
+    .section-title{
+      margin: 0 0 10px;
+      font-size: 18px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.92);
+    }
+    .section-sub{
+      margin: 0 0 16px;
+      color: var(--muted);
+      line-height: 1.7;
+      max-width: 78ch;
+      font-size: 14.5px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 14px;
+    }
+    .col-6{ grid-column: span 6; }
+    .col-4{ grid-column: span 4; }
+    .col-12{ grid-column: span 12; }
+
+    .service{
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: var(--radius);
+      padding: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,.12);
+    }
+    .service h3{
+      margin: 0 0 8px;
+      font-size: 15px;
+      letter-spacing: .4px;
+      display:flex;
+      gap: 10px;
+      align-items:center;
+    }
+    .service p{
+      margin:0;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 13.8px;
+    }
+
+    .kpis{
+      display:flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .kpi{
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.12);
+      border-radius: 14px;
+      padding: 10px 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .kpi strong{ color: var(--text); }
+
+    /* Gallery placeholders */
+    .gallery{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 12px;
+    }
+    .shot{
+      grid-column: span 4;
+      border-radius: 16px;
+      overflow:hidden;
+      border: 1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.03);
+      height: 160px;
+      position:relative;
+    }
+    .shot::before{
+      content:"";
+      position:absolute; inset:0;
+      background:
+        radial-gradient(220px 120px at 30% 20%, rgba(215,181,109,.10), transparent 60%),
+        radial-gradient(220px 120px at 75% 40%, rgba(120,180,255,.10), transparent 60%);
+    }
+    .shot span{
+      position:absolute; left:14px; bottom:12px;
+      color: rgba(255,255,255,.78);
+      font-size: 12.5px;
+      letter-spacing: .4px;
+    }
+
+    /* Contact */
+    .contact{
+      display:flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: stretch;
+    }
+    .contact .card{ flex: 1 1 340px; }
+    .contact small{ color: var(--muted); }
+
+    /* Footer */
+    footer{
+      padding: 18px 0 90px;
+      color: rgba(255,255,255,.60);
+      font-size: 12.5px;
+      border-top: 1px solid rgba(255,255,255,.06);
+      margin-top: 14px;
+    }
+
+    /* Floating WhatsApp */
+    .floating{
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 60;
+      display:flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items:flex-end;
+    }
+    .float-btn{
+      border-radius: 999px;
+      padding: 14px 16px;
+      border: 1px solid rgba(215,181,109,.45);
+      background: linear-gradient(135deg, rgba(215,181,109,.22), rgba(255,255,255,.04));
+      box-shadow: 0 16px 45px rgba(0,0,0,.35);
+      font-weight: 750;
+      letter-spacing: .3px;
+    }
+    .float-note{
+      background: rgba(0,0,0,.30);
+      border: 1px solid rgba(255,255,255,.10);
+      color: rgba(255,255,255,.80);
+      padding: 8px 10px;
+      border-radius: 12px;
+      font-size: 12px;
+      max-width: 240px;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px){
+      .hero-grid{ grid-template-columns: 1fr; }
+      nav{ display:none; }
+      .shot{ grid-column: span 6; height: 150px; }
+      .col-6{ grid-column: span 12; }
+      .col-4{ grid-column: span 12; }
+    }
+    @media (max-width: 520px){
+      .wrap{ padding: 18px; }
+      .card > .inner{ padding: 20px; }
+      .shot{ grid-column: span 12; height: 150px; }
+      .brand{ min-width: unset; }
+      .big-phone{ font-size: 22px; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Topbar -->
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">JS</div>
+        <div class="name">
+          <strong>Javier Stanek</strong>
+          <span>Técnico Electromecánico · General Pico</span>
+        </div>
+      </div>
+
+      <nav aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#trabajos">Trabajos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a class="btn gold" id="btnWhatsAppTop" href="#" rel="nofollow">Solicitar presupuesto</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero-grid">
+        <div class="card">
+          <div class="inner">
+            <h1 class="headline">JAVIER STANEK</h1>
+            <p class="sub">
+              Técnico Electromecánico en <strong>General Pico</strong>.
+              Soluciones eléctricas, refrigeración y automatización con atención profesional, herramientas propias y movilidad.
+            </p>
+
+            <div class="line"></div>
+
+            <div class="info">
+              <div class="pill">
+                <div class="icon" aria-hidden="true">☎</div>
+                <div>
+                  <div class="big-phone" id="phoneText">2302 606482</div>
+                  <div style="margin-top:2px;">General Pico · La Pampa</div>
+                </div>
+              </div>
+
+              <div class="cta-row">
+                <a class="btn gold" id="btnWhatsAppHero" href="#" rel="nofollow">Hablar por WhatsApp</a>
+                <a class="btn" href="#servicios">Ver servicios</a>
+              </div>
+
+              <div class="kpis" aria-label="Beneficios">
+                <div class="kpi"><strong>Presupuestos</strong> sin cargo</div>
+                <div class="kpi"><strong>Atención</strong> responsable</div>
+                <div class="kpi"><strong>Movilidad</strong> propia</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="side">
+          <div class="card">
+            <div class="inner">
+              <div class="badge">⚡ Atención profesional</div>
+              <p class="mini" style="margin-top:12px;">
+                En ciudad chica, la confianza es todo.
+                Trabajo con foco en <strong>calidad</strong>, <strong>orden</strong> y <strong>cumplimiento</strong>.
+              </p>
+              <div class="line" style="margin:14px 0;"></div>
+              <p class="mini">
+                ¿Necesitás una visita técnica? Coordinamos por WhatsApp y te paso una propuesta clara.
+              </p>
+              <div class="cta-row" style="margin-top:14px;">
+                <a class="btn gold" id="btnWhatsAppSide" href="#" rel="nofollow">Coordinar visita</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="inner">
+              <div class="badge">🛠 Servicios clave</div>
+              <p class="mini" style="margin-top:12px;">
+                Electricidad domiciliaria e industrial · Refrigeración · Automatización · Cámaras.
+              </p>
+              <div class="line" style="margin:14px 0;"></div>
+              <small>Tip: subí fotos reales de trabajos (tableros, instalaciones, equipos, antes/después).</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios">
+      <h2 class="section-title">Servicios</h2>
+      <p class="section-sub">
+        Servicios técnicos para hogares, comercios e industria. Diagnóstico claro, trabajo prolijo y atención responsable.
+      </p>
+
+      <div class="grid">
+        <div class="service col-6">
+          <h3><span class="icon" aria-hidden="true">⚡</span> Instalaciones eléctricas (domiciliarias e industriales)</h3>
+          <p>Instalaciones nuevas, ampliaciones, mantenimiento, tableros eléctricos, corrección de fallas y puesta a punto.</p>
+        </div>
+
+        <div class="service col-6">
+          <h3><span class="icon" aria-hidden="true">❄</span> Refrigeración y climatización</h3>
+          <p>Instalación y reparación de aires acondicionados. Soporte a sistemas y equipos en entornos comerciales/industriales.</p>
+        </div>
+
+        <div class="service col-6">
+          <h3><span class="icon" aria-hidden="true">🔧</span> Automatización y electromontaje</h3>
+          <p>Soluciones técnicas y montaje para mejorar operación, seguridad y confiabilidad de instalaciones.</p>
+        </div>
+
+        <div class="service col-6">
+          <h3><span class="icon" aria-hidden="true">📹</span> Sistemas de cámaras de seguridad</h3>
+          <p>Instalación, configuración y puesta en marcha de cámaras para hogares y comercios.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="sobre-mi">
+      <h2 class="section-title">Sobre mí</h2>
+      <p class="section-sub">
+        Soy Técnico Electromecánico. Trabajo con herramientas y movilidad propia, priorizando calidad, orden y cumplimiento.
+        Mi objetivo es que tengas una solución técnica segura, clara y duradera.
+      </p>
+
+      <div class="grid">
+        <div class="service col-4">
+          <h3><span class="icon" aria-hidden="true">✅</span> Prolijidad</h3>
+          <p>Trabajo ordenado, prolijo y con foco en seguridad.</p>
+        </div>
+        <div class="service col-4">
+          <h3><span class="icon" aria-hidden="true">🕒</span> Cumplimiento</h3>
+          <p>Coordinación clara y respeto por los tiempos acordados.</p>
+        </div>
+        <div class="service col-4">
+          <h3><span class="icon" aria-hidden="true">🧾</span> Presupuesto claro</h3>
+          <p>Te explico el diagnóstico y la solución sin vueltas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRABAJOS -->
+    <section id="trabajos">
+      <h2 class="section-title">Trabajos realizados</h2>
+      <p class="section-sub">
+        Reemplazá estos placeholders por fotos reales. En General Pico esto aumenta la confianza y las recomendaciones.
+      </p>
+
+      <div class="gallery" aria-label="Galería de trabajos">
+        <div class="shot"><span>Tablero / instalación</span></div>
+        <div class="shot"><span>Refrigeración / equipo</span></div>
+        <div class="shot"><span>Cámaras / instalación</span></div>
+        <div class="shot"><span>Antes / Después</span></div>
+        <div class="shot"><span>Mantenimiento</span></div>
+        <div class="shot"><span>Automatización</span></div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <h2 class="section-title">Contacto</h2>
+      <p class="section-sub">
+        Escribime por WhatsApp y coordinamos una visita. <strong>Presupuestos sin cargo.</strong>
+      </p>
+
+      <div class="contact">
+        <div class="card">
+          <div class="inner">
+            <h3 style="margin:0 0 8px; letter-spacing:.5px;">📞 Teléfono</h3>
+            <p style="margin:0; color:var(--muted);">Llamadas o WhatsApp</p>
+            <div class="line" style="margin:14px 0;"></div>
+            <div class="big-phone" id="phoneText2">2302 606482</div>
+            <div class="cta-row" style="margin-top:14px;">
+              <a class="btn gold" id="btnWhatsAppContact" href="#" rel="nofollow">Enviar WhatsApp</a>
+              <a class="btn" id="btnCall" href="#">Llamar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="inner">
+            <h3 style="margin:0 0 8px; letter-spacing:.5px;">📍 Zona</h3>
+            <p style="margin:0; color:var(--muted);">General Pico · La Pampa</p>
+            <div class="line" style="margin:14px 0;"></div>
+
+            <!-- Opcional: pegá acá un iframe de Google Maps (si tenés dirección o punto de referencia). -->
+            <div style="border-radius:16px; border:1px solid rgba(255,255,255,.08); background:rgba(255,255,255,.03); padding:14px;">
+              <p style="margin:0; color:var(--muted); line-height:1.7; font-size:13.8px;">
+                Si querés, agrego el mapa cuando me pases el punto exacto (o una zona aproximada) para no publicar dirección privada.
+              </p>
+            </div>
+
+            <div class="line" style="margin:14px 0;"></div>
+            <small>Horario sugerido: Lun a Sáb 8:00–20:00 (ajustable).</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap" style="padding:0;">
+        <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap;">
+          <div>© <span id="year"></span> Javier Stanek · Técnico Electromecánico · General Pico, La Pampa</div>
+          <div style="color:rgba(255,255,255,.45);">Presupuestos sin cargo · Atención profesional</div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Floating WhatsApp -->
+  <div class="floating" aria-label="Acceso rápido WhatsApp">
+    <div class="float-note">¿Necesitás presupuesto? Respondemos por WhatsApp.</div>
+    <a class="btn float-btn" id="btnWhatsAppFloat" href="#" rel="nofollow">WhatsApp</a>
+  </div>
+
+  <script>
+    // =========================
+    // CONFIGURACIÓN RÁPIDA
+    // =========================
+    const PHONE_DISPLAY = "2302 606482";           // cómo se ve en pantalla
+    const PHONE_TEL = "+5492302606482";            // formato tel: (Argentina: +54 9 + area + número)
+    const WHATSAPP_NUMBER = "5492302606482";       // SOLO números, sin + (para wa.me)
+    const WHATSAPP_MSG = "Hola Javier, quiero consultar por un presupuesto. ¿Tenés disponibilidad?";
+
+    const waLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MSG)}`;
+    const telLink = `tel:${PHONE_TEL}`;
+
+    // Set phone text
+    document.getElementById("phoneText").textContent = PHONE_DISPLAY;
+    document.getElementById("phoneText2").textContent = PHONE_DISPLAY;
+
+    // Buttons
+    const setHref = (id, href) => { const el = document.getElementById(id); if(el) el.href = href; };
+
+    setHref("btnWhatsAppTop", waLink);
+    setHref("btnWhatsAppHero", waLink);
+    setHref("btnWhatsAppSide", waLink);
+    setHref("btnWhatsAppContact", waLink);
+    setHref("btnWhatsAppFloat", waLink);
+    setHref("btnCall", telLink);
+
+    // Year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>  
